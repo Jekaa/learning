@@ -1,5 +1,8 @@
-package ru.patterns.creational.builder;
+package ru.patterns.creational.builder.outer;
 
+/**
+ * Builder pattern
+ */
 public class BuilderImpl implements Builder {
     private ComplexObject object;
 
@@ -31,8 +34,8 @@ public class BuilderImpl implements Builder {
     }
 
     @Override
-    public Builder multipler(Double multipler) {
-        object.setMultipler(multipler);
+    public Builder multiplier(Double multiplier) {
+        object.setMultiplier(multiplier);
         return this;
     }
 }

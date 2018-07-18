@@ -1,4 +1,4 @@
-package ru.patterns.creational.builder;
+package ru.patterns.creational.builder.outer;
 
 public class DemoBulder {
     public static void main(String[] args) {
@@ -7,11 +7,11 @@ public class DemoBulder {
                 builder.type(ComplexObject.Type.FREE)
                         .name("Object1")
                         .value(1000)
-                        .multipler(2.0)
+                        .multiplier(2.0)
                         .build();
         System.out.println(object.getType());
         System.out.println(object.getName());
         System.out.println(object.getValue());
-        System.out.println(object.getMultipler());
+        System.out.println(object.getMultiplier());
     }
 }

@@ -1,10 +1,10 @@
-package ru.patterns.creational.builder;
+package ru.patterns.creational.builder.outer;
 
 public class ComplexObject {
     private Type type;
     private String name;
     private Integer value;
-    private Double multipler;
+    private Double multiplier;
 
     public Type getType() {
         return type;
@@ -30,12 +30,12 @@ public class ComplexObject {
         this.value = value;
     }
 
-    public Double getMultipler() {
-        return multipler;
+    public Double getMultiplier() {
+        return multiplier;
     }
 
-    protected void setMultipler(Double multipler) {
-        this.multipler = multipler;
+    protected void setMultiplier(Double multiplier) {
+        this.multiplier = multiplier;
     }
 
     public enum Type {
