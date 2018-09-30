@@ -1,12 +1,12 @@
 package ru.patterns.creational.builder.outer;
 
-class ComplexObject {
+public class ComplexObject {
     private Type type;
     private String name;
-    private Integer value;
+    private Long value;
     private Double multiplier;
 
-    Type getType() {
+    public Type getType() {
         return type;
     }
 
@@ -14,7 +14,7 @@ class ComplexObject {
         this.type = type;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
@@ -22,15 +22,15 @@ class ComplexObject {
         this.name = name;
     }
 
-    Integer getValue() {
+    public Long getValue() {
         return value;
     }
 
-    void setValue(Integer value) {
+    void setValue(Long value) {
         this.value = value;
     }
 
-    Double getMultiplier() {
+    public Double getMultiplier() {
         return multiplier;
     }
 
@@ -39,6 +39,7 @@ class ComplexObject {
     }
 
     public enum Type {
-        FREE
+        FREE,
+        BUSY
     }
 }

@@ -3,10 +3,10 @@ package ru.patterns.creational.builder.inner;
 /**
  * class with inner builder-class implements builder pattern
  */
-class ComplexObject {
+public class ComplexObject {
     private final Type type;
     private final String name;
-    private final Integer value;
+    private final Long value;
     private final Double multiplier;
 
     private ComplexObject(Builder builder) {
@@ -16,53 +16,54 @@ class ComplexObject {
         this.multiplier = builder.multiplier;
     }
 
-    Type getType() {
+    public Type getType() {
         return type;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    Integer getValue() {
+    public Long getValue() {
         return value;
     }
 
-    Double getMultiplier() {
+    public Double getMultiplier() {
         return multiplier;
     }
 
     public enum Type {
-        FREE
+        FREE,
+        BUSY
     }
 
-    static class Builder {
+    public static class Builder {
         private Type type;
         private String name;
-        private Integer value;
+        private Long value;
         private Double multiplier;
 
-        Builder type(Type type) {
+        public Builder type(Type type) {
             this.type = type;
             return this;
         }
 
-        Builder name(String name) {
+        public Builder name(String name) {
             this.name = name;
             return this;
         }
 
-        Builder value(Integer value) {
+        public Builder value(Long value) {
             this.value = value;
             return this;
         }
 
-        Builder multiplier(Double multiplier) {
+        public Builder multiplier(Double multiplier) {
             this.multiplier = multiplier;
             return this;
         }
 
-        ComplexObject build() {
+        public ComplexObject build() {
             return new ComplexObject(this);
         }
     }

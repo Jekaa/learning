@@ -28,7 +28,7 @@ public class BuilderImpl implements Builder {
     }
 
     @Override
-    public Builder value(Integer value) {
+    public Builder value(Long value) {
         object.setValue(value);
         return this;
     }

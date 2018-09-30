@@ -25,7 +25,7 @@ public interface Builder {
      * @param value значение
      * @return builder
      */
-    Builder value(final Integer value);
+    Builder value(final Long value);
 
     /**
      * set multiplier parameter
