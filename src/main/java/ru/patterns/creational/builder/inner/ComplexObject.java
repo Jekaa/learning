@@ -1,13 +1,13 @@
 package ru.patterns.creational.builder.inner;
 
 /**
- * class with inner builder-class inplements builder pattern
+ * class with inner builder-class implements builder pattern
  */
-public class ComplexObject {
-    private Type type;
-    private String name;
-    private Integer value;
-    private Double multiplier;
+class ComplexObject {
+    private final Type type;
+    private final String name;
+    private final Integer value;
+    private final Double multiplier;
 
     private ComplexObject(Builder builder) {
         this.type = builder.type;
@@ -16,54 +16,53 @@ public class ComplexObject {
         this.multiplier = builder.multiplier;
     }
 
-    public Type getType() {
+    Type getType() {
         return type;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public Integer getValue() {
+    Integer getValue() {
         return value;
     }
 
-    public Double getMultiplier() {
+    Double getMultiplier() {
         return multiplier;
     }
 
     public enum Type {
-        FREE,
-        BUSY
+        FREE
     }
 
-    public static class Builder {
+    static class Builder {
         private Type type;
         private String name;
         private Integer value;
         private Double multiplier;
 
-        public Builder type(Type type) {
+        Builder type(Type type) {
             this.type = type;
             return this;
         }
 
-        public Builder name(String name) {
+        Builder name(String name) {
             this.name = name;
             return this;
         }
 
-        public Builder value(Integer value) {
+        Builder value(Integer value) {
             this.value = value;
             return this;
         }
 
-        public Builder multiplier(Double multiplier) {
+        Builder multiplier(Double multiplier) {
             this.multiplier = multiplier;
             return this;
         }
 
-        public ComplexObject build() {
+        ComplexObject build() {
             return new ComplexObject(this);
         }
     }

@@ -1,45 +1,44 @@
 package ru.patterns.creational.builder.outer;
 
-public class ComplexObject {
+class ComplexObject {
     private Type type;
     private String name;
     private Integer value;
     private Double multiplier;
 
-    public Type getType() {
+    Type getType() {
         return type;
     }
 
-    protected void setType(Type type) {
+    void setType(Type type) {
         this.type = type;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    protected void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 
-    public Integer getValue() {
+    Integer getValue() {
         return value;
     }
 
-    protected void setValue(Integer value) {
+    void setValue(Integer value) {
         this.value = value;
     }
 
-    public Double getMultiplier() {
+    Double getMultiplier() {
         return multiplier;
     }
 
-    protected void setMultiplier(Double multiplier) {
+    void setMultiplier(Double multiplier) {
         this.multiplier = multiplier;
     }
 
     public enum Type {
-        FREE,
-        BUSY
+        FREE
     }
 }

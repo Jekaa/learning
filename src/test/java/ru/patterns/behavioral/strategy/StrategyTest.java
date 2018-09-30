@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class StrategyTest {
-    StrategyContext context;
+    private StrategyContext context;
 
     @Before
     public void init() {
@@ -27,8 +27,8 @@ public class StrategyTest {
     }
 
     @Test
-    public void strategyMultTest() {
-        context.setStrategy(new StrategyImplMult());
+    public void strategyMultiplierTest() {
+        context.setStrategy(new StrategyImplMultiplier());
         int resultC = context.executeStrategy(5, 6);
         Assert.assertEquals(30, resultC);
     }

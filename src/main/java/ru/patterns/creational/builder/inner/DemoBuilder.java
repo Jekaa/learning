@@ -1,6 +1,6 @@
 package ru.patterns.creational.builder.inner;
 
-public class DemoBuilder {
+class DemoBuilder {
     public static void main(String[] args) {
 
         ComplexObject object = new ComplexObject.Builder()

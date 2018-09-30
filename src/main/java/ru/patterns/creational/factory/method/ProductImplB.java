@@ -1,4 +1,4 @@
 package ru.patterns.creational.factory.method;
 
-public class ProductImplB implements Product {
+class ProductImplB implements Product {
 }

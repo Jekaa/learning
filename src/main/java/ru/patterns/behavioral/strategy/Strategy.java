@@ -1,5 +1,5 @@
 package ru.patterns.behavioral.strategy;
 
-public interface Strategy {
+interface Strategy {
     int execute(int a, int b);
 }

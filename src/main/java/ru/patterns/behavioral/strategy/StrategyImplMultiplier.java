@@ -1,6 +1,6 @@
 package ru.patterns.behavioral.strategy;
 
-public class StrategyImplMult implements Strategy {
+public class StrategyImplMultiplier implements Strategy {
     @Override
     public int execute(int a, int b) {
         return a * b;

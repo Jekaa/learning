@@ -1,6 +1,6 @@
 package ru.patterns.creational.builder.outer;
 
-public class DemoBulder {
+class DemoBuilder {
     public static void main(String[] args) {
         BuilderImpl builder = new BuilderImpl();
         ComplexObject object =

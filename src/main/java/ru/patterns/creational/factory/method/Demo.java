@@ -1,6 +1,6 @@
 package ru.patterns.creational.factory.method;
 
-public class Demo {
+class Demo {
     public static void main(String[] args) {
         // an array of creators
         Creator[] creators = {new ConcreteCreatorA(), new ConcreteCreatorB()};

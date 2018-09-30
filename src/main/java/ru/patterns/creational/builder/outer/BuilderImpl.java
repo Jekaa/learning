@@ -4,7 +4,7 @@ package ru.patterns.creational.builder.outer;
  * Builder pattern
  */
 public class BuilderImpl implements Builder {
-    private ComplexObject object;
+    private final ComplexObject object;
 
     public BuilderImpl() {
         this.object = new ComplexObject();
