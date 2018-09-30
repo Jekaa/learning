@@ -1,7 +1,7 @@
-package ru.patterns.creational.builder.inner;
+package ru.patterns.creational.builder;
 
 /**
- * class with inner builder-class implements builder pattern
+ * class with builder-class implements builder pattern
  */
 public class ComplexObject {
     private final Type type;
