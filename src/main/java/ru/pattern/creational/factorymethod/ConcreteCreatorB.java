@@ -1,4 +1,4 @@
-package ru.patterns.creational.factorymethod;
+package ru.pattern.creational.factorymethod;
 
 public class ConcreteCreatorB implements Creator {
     @Override

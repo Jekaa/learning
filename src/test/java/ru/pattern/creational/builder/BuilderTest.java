@@ -1,4 +1,4 @@
-package ru.patterns.creational.builder;
+package ru.pattern.creational.builder;
 
 import org.junit.Assert;
 import org.junit.Test;

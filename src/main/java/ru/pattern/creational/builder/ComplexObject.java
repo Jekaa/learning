@@ -1,4 +1,4 @@
-package ru.patterns.creational.builder;
+package ru.pattern.creational.builder;
 
 /**
  * class with builder-class implements builder pattern

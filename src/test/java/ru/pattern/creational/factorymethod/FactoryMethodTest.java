@@ -1,4 +1,4 @@
-package ru.patterns.creational.factorymethod;
+package ru.pattern.creational.factorymethod;
 
 import org.junit.Assert;
 import org.junit.Before;

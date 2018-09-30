@@ -1,4 +1,4 @@
-package ru.patterns.behavioral.strategy;
+package ru.pattern.behavioral.strategy;
 
 class StrategyContext {
     private Strategy strategy;

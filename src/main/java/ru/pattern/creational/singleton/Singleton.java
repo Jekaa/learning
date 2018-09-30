@@ -1,4 +1,4 @@
-package ru.patterns.creational.singleton;
+package ru.pattern.creational.singleton;
 
 /**
  * The class implements Singleton pattern, thread-safe

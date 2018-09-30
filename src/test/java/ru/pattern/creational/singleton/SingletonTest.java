@@ -1,4 +1,4 @@
-package ru.patterns.creational.singleton;
+package ru.pattern.creational.singleton;
 
 import org.junit.Assert;
 import org.junit.Test;
