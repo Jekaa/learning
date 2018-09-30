@@ -1,26 +1,20 @@
 package ru.patterns.creational.builder;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import java.util.Optional;
 
 public class BuilderTest {
 
-    private ComplexObject object;
-
-    @Before
-    public void init() {
-        object = new ComplexObject.Builder()
+    @Test
+    public void useBuilder() {
+        ComplexObject object = new ComplexObject.Builder()
                 .type(ComplexObject.Type.FREE)
                 .name("name")
                 .value(1000L)
                 .multiplier(2.99)
                 .build();
-    }
 
-    @Test
-    public void useBuilder() {
         Assert.assertNotNull(object);
         Assert.assertEquals(ComplexObject.Type.FREE, object.getType());
         Assert.assertEquals("name", object.getName());
@@ -45,5 +39,15 @@ public class BuilderTest {
                 .build();
 
         Assert.assertNotEquals(object2, object3);
+    }
+
+    @Test
+    public void buildEmpty() {
+        ComplexObject object = new ComplexObject.Builder().build();
+        Assert.assertNotNull(object);
+        Assert.assertNull(object.getType());
+        Assert.assertNull(object.getName());
+        Assert.assertNull(object.getValue());
+        Assert.assertNull(object.getMultiplier());
     }
 }
