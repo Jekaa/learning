@@ -1,7 +1,13 @@
 package ru.patterns.creational.builder.inner;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import ru.patterns.creational.builder.outer.Builder;
+
 class DemoBuilder {
     public static void main(String[] args) {
+
+        Logger logger = LoggerFactory.getLogger(DemoBuilder.class);
 
         ComplexObject object = new ComplexObject.Builder()
                 .type(ComplexObject.Type.FREE)
@@ -10,9 +16,9 @@ class DemoBuilder {
                 .multiplier(2.99)
                 .build();
 
-        System.out.println(object.getType());
-        System.out.println(object.getName());
-        System.out.println(object.getValue());
-        System.out.println(object.getMultiplier());
+        logger.info("Type: " + object.getType());
+        logger.info("Name: " + object.getName());
+        logger.info("Value: " + object.getValue());
+        logger.info("Multiplier: " + object.getMultiplier());
     }
 }

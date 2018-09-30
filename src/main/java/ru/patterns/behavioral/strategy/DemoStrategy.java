@@ -1,7 +1,12 @@
 package ru.patterns.behavioral.strategy;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 class DemoStrategy {
     public static void main(String[] args) {
+        Logger logger = LoggerFactory.getLogger(DemoStrategy.class);
+
         StrategyContext context = new StrategyContext();
 
         context.setStrategy(new StrategyImplAdd());
@@ -13,8 +18,8 @@ class DemoStrategy {
         context.setStrategy(new StrategyImplMultiplier());
         int resultC = context.executeStrategy(5, 6);
 
-        System.out.println("Result A : " + resultA);
-        System.out.println("Result B : " + resultB);
-        System.out.println("Result C : " + resultC);
+        logger.info("Result A : " + resultA);
+        logger.info("Result B : " + resultB);
+        logger.info("Result C : " + resultC);
     }
 }
