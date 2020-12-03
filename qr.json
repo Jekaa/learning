@@ -1,0 +1,10 @@
+{
+  "content": {
+    "size": {
+      "aspect_ratio": 1,
+      "width": "resizable"
+    },
+    "url": "https://cdn.sberdevices.ru/VA/images/qr_code_sberinversor_link.png"
+  },
+  "type": "image_cell_view"
+}
