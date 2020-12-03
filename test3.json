@@ -1,0 +1,60 @@
+{
+  "type": "list_card",
+  "paddings": {
+    "left": "8x",
+    "right": "8x"
+  },
+  "cells": [
+    {
+      "type": "text_cell_view",
+      "content": {
+        "text": "RTSI • Индекс РТС",
+        "typeface": "headline3",
+        "text_color": "default",
+        "max_lines": 0
+      },
+      "paddings": {
+        "top": "10x"
+      }
+    },
+    {
+      "type": "left_right_cell_view",
+      "paddings": {
+        "top": "2x"
+      },
+      "left": {
+        "type": "simple_left_view",
+        "texts": {
+          "title": {
+            "text": "1 329",
+            "typeface": "headline1",
+            "text_color": "default",
+            "max_lines": 0
+          }
+        }
+      },
+      "right": {
+        "type": "detail_right_view",
+        "detail": {
+          "text": "➘ 0,45%",
+          "typeface": "body1",
+          "text_color": "warning"
+        },
+        "vertical_gravity": "bottom"
+      }
+    },
+    {
+      "type": "text_cell_view",
+      "content": {
+        "text": "Московская биржа 03.12.2020, 17:12:46 (МСК)",
+        "typeface": "footnote1",
+        "text_color": "secondary",
+        "max_lines": 0
+      },
+      "paddings": {
+        "top": "10x",
+        "bottom": "8x"
+      }
+    }
+  ]
+}
